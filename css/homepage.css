@@ -1,0 +1,484 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,Helvetica Neue,Arial;
+    background-color:#D3EBEB;
+    overflow-x: hidden;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Header */
+
+
+/* design logo */
+
+
+.logo{
+    width: 10%;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 0%;
+}
+
+.logo_img{
+    margin-left: 30%;
+    margin-top: -15%;
+}
+
+.logo strong{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+#cart, #login, #logout {
+    float: right;
+}
+
+div#logout {
+    width: fit-content;
+}
+
+div#login_logout {
+    display: inline;
+}
+
+
+/* design title bar list */
+
+.title_bar {
+    padding-top: 5%;
+    margin-left: 25%;
+}
+
+.title_bar ul{
+    list-style: none;
+}
+
+.list-items{
+    margin-top: -15%;
+    margin-left: 40%;
+}
+
+.search{
+    width: 100%;
+}
+
+.list-items li{
+    float: left;
+}
+
+/* models */
+
+.models-item{
+    display: none;
+    position: absolute;
+    /* background-color: black; */
+}
+
+.models-list{
+    padding: 0px;
+    margin: 0px;
+}
+
+.models-item a{
+    color: grey;
+    padding-left: -20%;
+}
+
+.models-item a:hover{
+    text-decoration: none;
+}
+
+.models-item li{
+    float: none;
+    
+}
+
+.models-list a:hover {
+    color: black;
+}
+
+.models-list:hover .models-item{
+    display: block;
+}
+
+
+.models-detail{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    display: inline-block;
+    margin: 13px;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 95%;
+}
+
+.header{
+    /* background-color: black; */
+    width: 100%;
+    display: block;
+    font-size: 100%;
+}
+
+
+/* type */
+
+.type-item{
+    display: none;
+    position: absolute;
+    /* background-color: black; */
+}
+
+.type-list{
+    justify-content: stretch;
+}
+
+.type-item a{
+    color: grey;
+    padding-left: -20%;
+}
+
+.type-item a:hover{
+    text-decoration: none;
+}
+
+.type-item li{
+    float: none;
+    
+}
+
+.type-list a:hover {
+    color: white;
+}
+
+.type-list:hover .type-item{
+    display: block;
+}
+
+.type-item{
+    display: none;
+    position: absolute;
+    /* background-color: black; */
+}
+
+.type-detail{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Slide show */
+
+.slider{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+
+.slide img{
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 1263px;
+    height: 700px;
+}
+
+/* css manual navigation */
+
+.navigation-manual{
+    position: absolute;
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+/* css auto navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1263px;
+    justify-content: center;
+    margin-top: 650px;
+}
+
+.navigation-auto div{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 500px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+
+/* Hot products */
+
+#hot_products h2, .view-all a {
+    float: left;
+}
+
+.h_product{
+    text-align: center;
+    margin-right: 20px;
+    color: white;
+    float: left;
+    background: white;
+    margin-bottom: 10px;
+    transition: transform 0.5s;
+}
+
+.h_product img{
+    width: 310px;
+    height: 150px;
+}
+
+.h_product:hover{
+    transform: translateY(-15px);
+}
+
+#hot_products{
+    padding-left: 6.5%;
+}
+
+#hot_products a:hover{
+    text-decoration: none;
+}
+
+/* View all hot products */
+
+.view-all{
+    color: #ffff;
+    font-style: italic;
+    margin-left: 86%;
+}
+
+.view-all a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* Used products */
+
+.view-all a, #used h2 {
+    float: left;
+}
+
+.u_product{
+    text-align: center;
+    background-color:grey;
+    color: #ffffff;
+    float: left;
+    background: #eee;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+
+.u_product img{
+    width: 310px;
+    height: 150px;
+}
+
+.u_product:hover{
+    transform: translateY(-10px);
+    /* border: grey solid 2px; */
+}
+
+#used {
+    padding-left: 6.5%;
+}
+
+#used a:hover{
+    text-decoration: none;
+}
+
+
+/* footer */
+
+/* address */
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: #565656;
+}
+
+.footer1{
+    width: 25%;
+}
+.logo_footer strong{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo_footer{
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.address p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.address i{
+    font-size: 25px;
+    top: 6px;
+    position: relative;
+    margin-right: 15px;
+}
+
+
+/* information */
+
+.footer2,.footer1{
+    float: left;
+}
+
+.footer2{
+    margin-left: 5%;
+    padding-top: 1%;
+    width: 15%;
+}
+
+.footer2 h3{
+    margin-left: 12%;
+}
+
+.footer2 a{
+    margin-bottom: 2px;    
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+} 
+
+.footer2 a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+/* list frequently asked */
+
+.footer3,.footer1,.footer2,.footer4{
+    float: left;
+}
+
+.footer3{
+    margin-left: 5%;
+    padding-top: 1%;
+    width: 20%;
+}
+
+.footer3 a{
+    margin-bottom: 2px;    
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+}
+
+.footer3 a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+.footer3 h3{
+    margin-left: 8%;
+}
+
+/* follow */
+
+.footer1,.footer2,.footer4{
+    float: left;
+}
+
+
+.footer4{
+    margin-left: 10%;
+    padding-top: 1%;
+    width: 20%;
+}
+
+.footer4 i{
+    margin-right: 10px;
+}
+
+/* power by */
+
+.powerby{
+    width: 100%;
+    height: 50px;
+}
+

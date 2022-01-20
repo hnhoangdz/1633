@@ -1,0 +1,182 @@
+/* style for navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* Slide show */
+
+.slider{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+
+.slide img{
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 1263px;
+    height: 700px;
+}
+
+/* css manual navigation */
+
+.navigation-manual{
+    position: absolute;
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+/* css auto navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 1263px;
+    justify-content: center;
+    margin-top: 650px;
+}
+
+.navigation-auto div{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 500px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,Helvetica Neue,Arial;
+    background-color:black;
+}
+
+.h_product{
+    text-align: center;
+    background-color:grey;
+    color: #ffffff;
+    float: left;
+}
+
+.h_product img{
+    width: 310px;
+    height: 170px;
+}
+
+#hot_products{
+    padding-left: 7.5%;
+}
+
+#hot_products a:hover{
+    text-decoration: none;
+}
+
+
